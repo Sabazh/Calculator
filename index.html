@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <title>CALCULATOR</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display">
+                <h3 id="result"></h3>
+            </div>
+            <div>
+                <button id="clear" onclick="clearOperation('c')">C</button>           
+                <button onclick="xSquare()">x²</button>
+                <button onclick="setOperation('/')">÷</button>  
+            </div>
+            <div>
+                <button onclick="addSymbol('7')">7</button>
+                <button onclick="addSymbol('8')">8</button>
+                <button onclick="addSymbol('9')">9</button>
+                <button onclick="setOperation('*')">*</button>
+            </div>
+            <div>
+                <button onclick="addSymbol('4')">4</button>
+                <button onclick="addSymbol('5')">5</button>
+                <button onclick="addSymbol('6')">6</button>
+                <button onclick="setOperation('-')">-</button>                           
+            </div>
+            <div>
+                <button onclick="addSymbol('1')">1</button>
+                <button onclick="addSymbol('2')">2</button>
+                <button onclick="addSymbol('3')">3</button>
+                <button onclick="setOperation('+')">+</button>
+            </div>
+            <div>
+                <button onclick="addSymbol('00')">00</button> 
+                <button onclick="addSymbol('0')">0</button>        
+                <button id="equal" onclick="calculate()">=</button>
+            </div>  
+        </div>   
+    </div> 
+    
+    <script src="./script.js"></script>
+</body>
+</html>
